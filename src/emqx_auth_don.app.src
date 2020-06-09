@@ -1,14 +1,14 @@
 {application, emqx_hook_don,
- [{description, "hook plugin for dcloud, includes auth, kafka and others"},
+ [{description, "Auth plugin for EMQX broker"},
   {vsn, "git"},
   {modules, []},
-  {registered, [emqx_hook_don_sup]},
+  {registered, [emqx_auth_don_sup]},
   {applications, [kernel,stdlib]},
-  {mod, {emqx_hook_don_app,[]}},
+  {mod, {emqx_auth_don_app,[]}},
   {env, []},
   {licenses, ["Apache-2.0"]},
   {maintainers, ["Don"]},
   {links, [{"Homepage", "https://test.com"},
-           {"Github", "https://github.com/hashforu/emqx_hook_don"}
+           {"Github", "https://github.com/hashforu/emqx_auth_don"}
           ]}
  ]}.

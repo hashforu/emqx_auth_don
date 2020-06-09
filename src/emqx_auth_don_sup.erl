@@ -2,7 +2,7 @@
 %% private
 %%--------------------------------------------------------------------
 
--module(emqx_hook_don_sup).
+-module(emqx_auth_don_sup).
 
 -behaviour(supervisor).
 
