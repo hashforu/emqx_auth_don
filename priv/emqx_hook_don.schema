@@ -1,0 +1,11 @@
+%%-*- mode: erlang -*-
+
+{mapping, "kafka.host", "emqx_hook_don.broker", [
+  {default, "192.168.205.116"},
+  {datatype, string}
+]}.
+
+
+{translation, "emqx_hook_don.broker", fun(Conf) ->
+  KafkaHost = cuttlefish:conf_get("kafka.host", Conf),
+  [{host, KafkaHost}]end}.
